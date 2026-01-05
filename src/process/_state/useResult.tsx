@@ -37,7 +37,7 @@ export const useResult = () => {
 
       return {
         code: datum.code,
-        num: index + 1,
+        num: datum.num ?? index + 1,
         questionExam: {
           height: questionHeight.height.reduce((curr, next) => curr + next, 0),
           subHeight: questionHeight.height,
