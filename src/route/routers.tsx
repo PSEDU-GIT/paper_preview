@@ -6,7 +6,7 @@ import DefaultLayout from "./DefaultLayout.tsx";
 
 export default function Routers() {
   return (
-    <BrowserRouter basename="/">
+    <BrowserRouter basename="/preview">
       <Routes>
         <Route element={<DefaultLayout />}>
           <Route index path="/" element={<App />} />
