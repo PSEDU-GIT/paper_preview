@@ -18,7 +18,7 @@ export default function CustomAnswerListAction() {
 
         return curr.concat([
           <div key={uuidV4()}>
-            <CustomTitle num={index + 1} code={next.code} />
+            <CustomTitle num={next.num} />
             {first}
           </div>,
           ...rest,

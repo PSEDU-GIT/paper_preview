@@ -19,10 +19,10 @@ export const useLoad = () => {
     const json = (await response.json()) as FetchDataResponseTypes;
 
     const list: ExamTypes[] = await Promise.all(
-      json.view.map(async (datum, index) => {
+      json.view.map(async (datum) => {
         return {
           code: datum.qd_code,
-          num: index + 1,
+          num: Number(datum.qd_num),
           content: await usePathToXml(datum.question),
           answerContent: await usePathToXml(datum.commentary),
         };

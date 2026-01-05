@@ -11,7 +11,7 @@ export default function CustomQuestionListAction() {
     return resultData.list.map((datum, index) => {
       return (
         <div key={index} style={{ minHeight: resultHeight.question[index] }}>
-          <CustomTitle num={index + 1} code={datum.code} />
+          <CustomTitle num={datum.num} />
           {datum.questionExam.element.map((el, index) => (
             <div key={index} dangerouslySetInnerHTML={{ __html: el }} />
           ))}

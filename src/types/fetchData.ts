@@ -10,5 +10,6 @@ export type FetchDataResponseTypes = {
     question: string;
     qd_code: string;
     qd_type: string;
+    qd_num: string;
   }[];
 };
